@@ -106,6 +106,35 @@
 
     let name03 = makeName('Beyoncé', 'Giselle', 'Knowles');
     console.log(name03);
+
+    console.log("Making a better name function");
+
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
+    }
+
+    console.log(makeBetterName('Joan', 'Marie', 'Larkin'));
+    console.log(makeBetterName('John', 'F', 'Kennedy'));
+    console.log(makeBetterName('Michael', 'B', 'Jordan'));
+
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return "Home team wins!";
+      } else if (home === away) {
+        return "It was a tie";
+      } else {
+        return "Away team wins :("
+      }
+    }
+    
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3,5));
+    console.log(scoreCompare(5,5));
   </script>
 </body>
 </html>
